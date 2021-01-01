@@ -1,0 +1,273 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+    font-size: 62.5%;
+}
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    font-size: 1.4rem;
+}
+form {
+    float: left;
+}
+input {
+    height: 36.1px;
+    width: 350px;
+    background-color: white;
+    background-image: url('search-icon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+.col-1-2 {
+    display: inline-block;
+    width: 50%;
+}
+.inline-block {
+    display: inline-block;
+}
+li {
+    list-style-type: none;
+    margin-left: 3.5rem;
+}
+.dropdown-btn {
+    background-color: inherit;
+    font-size: 3.2rem;
+    color: #000;
+    margin-top: 10px;
+    border: none;
+    display: none;
+}
+nav {
+    float: right;
+}
+nav li {
+    float: left;
+}
+nav a {
+    font-size: 1.5rem;
+}
+nav a:hover {
+    color: #f80;
+}
+.section-margins {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+.f8-orange {
+    color: #f80;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+    background: #fff url("../images/berries.png") no-repeat;
+    height: 70%;
+}
+header > section {
+    float: left;
+}
+.social-links {
+    margin-top: 1.5rem;
+}
+.social-links a {
+    margin-right: 4rem;
+}
+.social-links i {
+    color: #f80;
+}
+.discover-section {
+    float: right;
+    background: #fff url("../images/pie-oat.jpg") no-repeat;
+}
+.discover-section > div {
+    margin-left: 40%;
+}
+.header-pos {
+    margin-left: 8%;
+    margin-top: 4%;
+}
+.btn {
+    background-color: #f80;
+    color: #fff;
+    font-family: sans-serif;
+    border: none;
+    padding: 1rem;
+
+}
+.btn-extend {
+    padding: 1.1rem;
+}
+.curved-left {
+    border-radius: 10px 0 0 10px;
+}
+.curved-right {
+    border-radius: 0 10px 10px 0;
+}
+.faint-color {
+    background-color: #ffAA4D;
+}
+.drop-btns {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.drop-btn {
+    font-size: 1.6rem;
+    background-color: inherit;
+    padding: 2rem;
+    padding-bottom: 1rem;
+    border: none;
+    border-bottom: 1px solid #DBDEDF;
+}
+.drop-btn:active,
+.active {
+    color: #f80;
+    border-bottom-color: #f80;
+}
+.booking-section .col-1-2 {
+    text-align: left;
+}
+.booking-section i,
+.booking-section > p {
+    margin-top:0.5rem;
+    margin-bottom: 0.5rem;
+}
+.days {
+    padding-right: 15%;
+}
+.profile-icon {
+    border-radius: 100%;
+}
+.ratings {
+    color: #FFC107;
+}
+.foods {
+    padding: 0;
+    padding-top: 5%;
+}
+.check {
+    border: 1px solid red;
+}
+/******************************************
+/* Typography
+/*******************************************/
+h1 {
+    font-size: 4.6rem;
+}
+h2 {
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #f80;
+}
+p {
+    font-family: sans-serif;
+}
+.center {
+    text-align: center;
+}
+.large {
+    font-family: serif;
+    font-size: 4rem;
+    margin-top: 0;
+}
+.larger-font {
+    margin-bottom: 0;
+    font-size: 2.2rem;
+}
+.light-color {
+    margin-top: 0;
+    color: #ADADB6;
+}
+.bold {
+    font-weight: 700;
+}
+.remove-margin {
+    margin: 0;
+}
+.numbers {
+    font-family: serif;
+    font-size: 2rem;
+}
+.italicised {
+    font-style: italic;
+    color: #64647E;
+    line-height: 2.1rem;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+/******************************************
+/* MEDIA QUERY
+/*******************************************/
+@media all and (max-width:600px) {
+    nav {
+        float: left;
+    }
+    nav li {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .dropdown-btn {
+        display: inline;
+        padding-left: 3rem;
+        padding-bottom: 2rem;
+    }
+    .dropdown-btn:hover {
+        color: #f80;
+    }
+    .dropdown-content {
+        padding-bottom: 4rem;
+        padding-right: 30px;
+        display: none;
+    }
+    .dropdown-content a {
+        display: block;
+        font-size: 2.8rem;
+        padding: 14px 16px;
+    }
+    .dropdown {
+        padding: 0;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown-content a:hover {
+        box-shadow: 5px 10px 10px #333;
+    }
+    input {
+        width: 175px;
+    }
+    #menu .large {
+        margin-top: 4rem;
+        margin-bottom: 8rem;
+    }
+    .foods img {
+        margin-top: 7rem;
+    }
+}
