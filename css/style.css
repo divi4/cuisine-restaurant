@@ -145,8 +145,8 @@ header > section {
     border: none;
     border-bottom: 1px solid #DBDEDF;
 }
-.drop-btn:active,
-.active {
+.drop-btn:hover,
+.drop-btn:active {
     color: #f80;
     border-bottom-color: #f80;
 }
@@ -220,6 +220,16 @@ p {
     line-height: 2.1rem;
     padding-left: 12%;
     padding-right: 12%;
+}
+/******************************************
+/* Menu
+/*******************************************/
+.hidden {
+	display: none;
+}
+.dropdown-content img {
+	display: inline-block;
+    width: 20%;
 }
 /******************************************
 /* MEDIA QUERY
