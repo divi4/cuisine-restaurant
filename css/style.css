@@ -1,3 +1,22 @@
+
+Skip to content
+divi4 /
+cuisine-restaurant
+
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+
+More
+cuisine-restaurant/css/style.css
+@David2998
+David2998 Fixed reponsiveness
+History
+1 contributor
+323 lines (320 sloc) 5.41 KB
 /* Box Model Hack */
 * {
   box-sizing: border-box;
@@ -280,7 +299,31 @@ p {
         display: flex;
         flex-flow: column nowrap;
     }
-    .dropdown-content a:hover {
+    nav .dropdown-btn {
+        display: inline;
+        padding-left: 3rem;
+        padding-bottom: 2rem;
+    }
+    nav .dropdown-btn:hover {
+        color: #f80;
+    }
+    nav .dropdown-content {
+        padding-bottom: 4rem;
+        padding-right: 30px;
+        display: none;
+    }
+    nav .dropdown-content a {
+        display: block;
+        font-size: 2.8rem;
+        padding: 14px 16px;
+    }
+    nav .dropdown {
+        padding: 0;
+    }
+    nav .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    nav .dropdown-content a:hover {
         box-shadow: 5px 10px 10px #333;
     }
     input {
