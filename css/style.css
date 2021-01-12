@@ -27,16 +27,19 @@ body {
     margin: 0 auto;
     font-size: 1.4rem;
 }
-form {
-    float: left;
+header {
+    height: 500px;
+    background: #fff url("../images/berries.png") no-repeat;
 }
 input {
-    height: 36.1px;
+    height: 36px;
     width: 350px;
     background-color: white;
     background-image: url('search-icon.png');
     background-position: 10px 10px;
     background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
 }
 a {
     display: inline-block;
@@ -47,12 +50,25 @@ a {
     display: inline-block;
     width: 50%;
 }
+.col-1-2-extend {
+    display: inline-block;
+    width: 50%;
+}
 .inline-block {
     display: inline-block;
 }
 li {
     list-style-type: none;
     margin-left: 3.5rem;
+}
+.header-main {
+    display: flex;
+    flex-flow: column wrap;
+
+}
+.header-search {
+    display: flex;
+    flex-flow: row nowrap;
 }
 .dropdown-btn {
     background-color: inherit;
@@ -84,10 +100,6 @@ nav a:hover {
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-    background: #fff url("../images/berries.png") no-repeat;
-    height: 70%;
-}
 header > section {
     float: left;
 }
@@ -101,11 +113,8 @@ header > section {
     color: #f80;
 }
 .discover-section {
-    float: right;
+    display: block;
     background: #fff url("../images/pie-oat.jpg") no-repeat;
-}
-.discover-section > div {
-    margin-left: 40%;
 }
 .header-pos {
     margin-left: 8%;
@@ -117,7 +126,6 @@ header > section {
     font-family: sans-serif;
     border: none;
     padding: 1rem;
-
 }
 .btn-extend {
     padding: 1.1rem;
@@ -231,10 +239,31 @@ p {
 	display: inline-block;
     width: 20%;
 }
+.check {
+    border: 1px solid red;
+}
 /******************************************
 /* MEDIA QUERY
 /*******************************************/
-@media all and (max-width:600px) {
+@media all and (min-width: 926px) {
+    .discover-section > div {
+        margin-left: 40%;
+    }
+}
+@media all and (max-width: 925px) {
+    .discover-section > div {
+        margin-left: 45%;
+    }
+    .foods img {
+        margin-top: 7rem;
+    }
+}
+@media all and (max-width: 801px) {
+    .discover-section > div {
+        margin-left: 50%;
+    }
+}
+@media all and (max-width:601px) {
     nav {
         float: left;
     }
@@ -243,29 +272,13 @@ p {
         margin: 0;
         text-align: center;
     }
-    .dropdown-btn {
-        display: inline;
-        padding-left: 3rem;
-        padding-bottom: 2rem;
+    .discover-section > div {
+        margin-left: 3rem;
     }
-    .dropdown-btn:hover {
-        color: #f80;
-    }
-    .dropdown-content {
-        padding-bottom: 4rem;
-        padding-right: 30px;
-        display: none;
-    }
-    .dropdown-content a {
-        display: block;
-        font-size: 2.8rem;
-        padding: 14px 16px;
-    }
-    .dropdown {
-        padding: 0;
-    }
-    .dropdown:hover .dropdown-content {
-        display: block;
+    .discover-section {
+        background: #fff url("../images/pie-oat-small.jpg") no-repeat;
+        display: flex;
+        flex-flow: column nowrap;
     }
     .dropdown-content a:hover {
         box-shadow: 5px 10px 10px #333;
@@ -277,7 +290,34 @@ p {
         margin-top: 4rem;
         margin-bottom: 8rem;
     }
+}
+@media all and (max-width:525px) {
+    .col-1-2-extend {
+        width: 100%;
+    }
+    .discover-section {
+        background: none;
+    }
+    .text {
+        display: flex;
+        flex-flow: column nowrap;
+        padding-right: 3rem;
+        margin-right: 2rem;
+    }
+}
+@media all and (max-width:350px) {
+    .text-pad {
+        padding-bottom: 3rem;
+    }
+    .foods {
+        padding-top: 16rem;
+    }
     .foods img {
-        margin-top: 7rem;
+        margin: 0;
+    }
+    .col-1-2 {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
     }
 }
