@@ -1,5 +1,5 @@
-# My Awesome Project
-Write a short sentence or two about this project and what it does. Be sure to include a link and a screenshot (we're front end devs so we can actually see our work!).
+# Cuisine Restaurant
+A website for a cusine restaurant with an interactive menu
 
 **Link to project:** https://cuisine-restaurant-site.netlify.app/
 
