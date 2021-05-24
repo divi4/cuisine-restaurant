@@ -1,5 +1,5 @@
 # Cuisine Restaurant
-A website for a cusine restaurant with an interactive menu
+A website for a cuisine restaurant with an interactive menu
 
 **Link to project:** https://cuisine-restaurant-site.netlify.app/
 
