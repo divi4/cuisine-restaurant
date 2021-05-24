@@ -16,6 +16,7 @@ Made with HTML, CSS and JavaScript based on given psd file
 * Minify images for faster loading
 * Added further pages
 * Show details on meals under the menu on hover
+* Add functionality to the "location" button and searchbar
 * Refactor code
 
 ## Lessons Learned:
